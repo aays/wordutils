@@ -9,7 +9,6 @@ box::use(./modules/ui_count)
 box::use(./modules/server_count)
 
 
-# Define UI for application that draws a histogram
 ui <- navbarPage(
   'wordutils',
   
@@ -23,10 +22,8 @@ ui <- navbarPage(
   )
 )
 
-# Define server logic required to draw a histogram
 server <- function(input, output) {
   server_count$server('counts')
 }
 
-# Run the application 
 shinyApp(ui = ui, server = server)

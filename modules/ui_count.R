@@ -3,7 +3,6 @@ box::use(shinyjqui[jqui_resizable])
 
 sidebar <- function(id) {
   tagList(
-    # h3('this is the sidebar'),
     numericInput(
       NS(id, 'in_top_n'),
       label = 'Number of top words to show',
@@ -33,7 +32,7 @@ example_text <- function(i) {
     'Man hook hand hook car door',
     'And just let him die??',
     'Hewwo...',
-    'What the fuck did you just say about me you little'
+    'What the fuck did you just say about me you little-'
   )[i]
 }
 
